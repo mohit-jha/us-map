@@ -1,38 +1,103 @@
-.App {
+svg {
+  display: block;
+  width: 100%;
+  height: 300px;
+}
+
+div {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+select {
+  width: 27%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.geo {
+  margin-bottom: 60px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h2 {
+  margin: 50px 0 10px 0;
+}
+
+svg .country:hover {
+  stroke: black;
+  stroke-width: 1px;
+  cursor: pointer;
+}
+
+#root {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
+  padding: 0 50px 150px;
+  text-align: center;
+  box-sizing: border-box;
 }
 
-.App-link {
-  color: #61dafb;
+button {
+  width: 100px;
+  border: 1px solid black;
+  margin: 0 auto 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+video {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: auto;
+  width: 100%;
+}
+
+#geo_map {
+  width: 800px;
+  height: auto;
+  margin: auto;
+}
+
+.main_comp {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.rat_container {
+  margin-top: 111px;
+  display: flex;
+  flex-direction: column;
+}
+
+.rat_title {
+  font-weight: 700;
+  font-size: 21px;
+  text-align: left;
+}
+
+.rat_tabs button {
+  text-align: left;
+  width: 100%;
+  font-weight: 600;
+  border: none;
+  border-right: 1px solid rgb(195, 220, 235);
+  border-bottom: 1px solid rgb(253, 237, 237);
+  box-shadow: wheat;
+  min-width: 200px;
+}
+
+.rat_tabs .active {
+  background: transparent;
+  border: none;
+  border-top: 3px solid #06468f;
+}
+
+.rat_tabs {
+  display: flex;
+  margin-top: 12px;
+}
+
+.tab_si {
+  padding: 10px 12px;
+
 }
