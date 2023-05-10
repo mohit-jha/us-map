@@ -22,9 +22,9 @@ const USAmap = () => {
     setSelectedState(geo);
   };
 
-  const getColorByRankk = (rating) => {
-    return gradientColors[rating];
-  };
+  // const getColorByRankk = (rating) => {
+  //   return gradientColors[rating];
+  // };
 
   const getColorByRank = (rating) => {
     if (typeof rating !== 'number') {
