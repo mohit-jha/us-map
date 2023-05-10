@@ -1,4 +1,7 @@
 import React, { useState } from 'react'
+import Factors from './Factors';
+import Feedback from './Feedback';
+import StateInformation from './StateInformation';
 
 function Rating() {
     const [activeButtonIndex, setActiveButtonIndex] = useState(1);
@@ -13,18 +16,20 @@ function Rating() {
                 <div className='rat_title'>Assign a weight to each facor </div>
                 <div className="rat_tabs">
                     <button
-                        className={activeButtonIndex === 0 ? 'active' : ''}
-                        onClick={() => handleButtonClick(0)}
+                        className={activeButtonIndex === 1 ? 'active factor_btn' : 'factor_btn'}
+                        onClick={() => handleButtonClick(1)}
                     >
                         <span>Factors</span>
                     </button>
                     <button
-                        className={activeButtonIndex === 1 ? 'active tab_si' : 'tab_si'}
-                        onClick={() => handleButtonClick(1)}
+                        className={activeButtonIndex === 0 ? 'active tab_si' : 'tab_si'}
+                        onClick={() => handleButtonClick(0)}
                     >
-                        <span>State information</span>
+                        <span>State Information</span>
                     </button>
                 </div>
+                {activeButtonIndex === 1 ? <Factors /> : <StateInformation />}
+                <Feedback />
             </div>
         </>
     );

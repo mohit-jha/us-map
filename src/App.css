@@ -67,6 +67,8 @@ video {
   margin-top: 111px;
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: fit-content;
 }
 
 .rat_title {
@@ -79,11 +81,12 @@ video {
   text-align: left;
   width: 100%;
   font-weight: 600;
+  font-size: 16px;
   border: none;
   border-right: 1px solid rgb(195, 220, 235);
   border-bottom: 1px solid rgb(253, 237, 237);
   box-shadow: wheat;
-  min-width: 200px;
+  min-width: 220px;
 }
 
 .rat_tabs .active {
@@ -98,6 +101,105 @@ video {
 }
 
 .tab_si {
-  padding: 10px 12px;
+  padding: 14px 12px;
 
+}
+
+.factor_btn {
+  padding: 0;
+}
+
+.factors_container span,
+.fact_left {
+  font-weight: 700;
+  font-size: 14px;
+  text-align: left;
+}
+
+.fact_right span:nth-child(1) {
+  /* padding: 0 15px; */
+}
+
+.factors_container {
+  display: grid;
+  justify-content: start;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: solid 2px #e1e1e1;
+  padding-bottom: 10px;
+  margin-top: 8px;
+}
+
+.fact_right button {
+  width: 35px;
+  height: 25px;
+  border: none;
+  background-color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  margin-right: 5px;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  margin-left: unset;
+}
+
+.fact_right button:hover {
+  color: #fff;
+  background-color: rgb(47, 85, 150);
+}
+
+input[type="button"]:active {
+  background-color: #d9d9d9;
+  outline: none;
+}
+
+.fact_right {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feed_container {
+  text-align: left;
+  position: relative;
+  margin-top: 24px;
+}
+
+.feed_container .feed_title {
+  text-align: left;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+
+.feed_container textarea {
+  width: 99%;
+  border-radius: 5px;
+}
+
+.feed_container button {
+  position: absolute;
+  right: 0;
+  margin-top: 10px;
+  background-color: rgb(47, 85, 150);
+  color: #fff;
+  border: none;
+  width: auto;
+  height: auto;
+  padding: 10px 14px;
+  border-radius: 5px;
+}
+
+/* .state_information:first-child .fact_right { */
+
+.state_information .fact_right {
+  padding-left: 14px;
+}
+
+.state_information .fact_right {
+  max-width: 155px;
+}
+
+.brand_information .fact_right {
+  justify-content: center;
 }
